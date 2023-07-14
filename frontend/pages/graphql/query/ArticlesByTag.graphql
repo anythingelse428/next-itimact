@@ -1,0 +1,9 @@
+#import "../fragments/PostData.graphql"
+
+query GetArticlesByTag($tagIn: [ID]) {
+  posts(where: { tagIn: $tagIn }) {
+    nodes {
+      ...PostData
+    }
+  }
+}

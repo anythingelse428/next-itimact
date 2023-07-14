@@ -1,0 +1,99 @@
+.toggle-switch {
+  position: relative;
+  width: 100px;
+  height: 40px;
+  &__input {
+    position: absolute;
+    display: block;
+    width: 100%;
+    opacity: 0;
+    height: 50px;
+    z-index: 5;
+    &:checked {
+      ~ .toggle-switch__thumb {
+        .thumb-ico {
+          opacity: 0;
+          transform: translateX(60px);
+          transition: all 0.4s;
+          box-shadow: none;
+          &.--checked {
+            opacity: 1;
+          }
+          &.--unchecked {
+            opacity: 0;
+          }
+        }
+      }
+    }
+    &:not(:checked) {
+      ~ .toggle-switch__thumb {
+        .thumb-ico {
+          opacity: 0;
+          transition: all 0.4s;
+          box-shadow: none;
+          &.--unchecked {
+            opacity: 1;
+          }
+          &.--checked {
+            opacity: 0;
+          }
+        }
+      }
+    }
+  }
+  &__thumb {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
+    background-color: #b1dcea87;
+    transition: all 0.4s;
+    .thumb-ico {
+      display: flex;
+      opacity: 0;
+      align-items: center;
+      background: #fff;
+      border-radius: 100%;
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      justify-content: center;
+    }
+  }
+}
+
+//   input:not(:checked) ~ .slider {
+//     .slider-ico {
+//       &.--unchecked {
+//         display: flex;
+//         opacity: 1;
+//         position: absolute;
+//         width: 40px;
+//         height: 40px;
+//         border-radius: 50%;
+//         transition: all 0.4s;
+//       }
+//       &.--checked {
+//         opacity: 0;
+//       }
+//     }
+//   }
+//   input:checked ~ .slider {
+//     .slider-ico.checked {
+//       display: flex;
+//       opacity: 1;
+//       position: absolute;
+//       width: 40px;
+//       height: 40px;
+//       border-radius: 50%;
+//       transition: all 0.4s;
+//     }
+//     .slider-ico.unchecked {
+//       opacity: 0;
+//     }
+//     background-color: #8ed7ee;
+//   }
+// }

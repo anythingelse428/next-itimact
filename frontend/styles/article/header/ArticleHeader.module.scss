@@ -1,0 +1,27 @@
+.article {
+  &__author,
+  &__meta {
+    display: flex;
+    align-items: center;
+  }
+  &__meta {
+    font-size: 13px;
+  }
+  &__author {
+    gap: 4px;
+    margin-right: 4px;
+    &-name {
+      font-weight: 600;
+    }
+  }
+  &__date-time {
+    display: flex;
+    align-items: baseline;
+    gap: 4px;
+    font-family: monospace;
+    color: #777;
+    span {
+      color: #777;
+    }
+  }
+}

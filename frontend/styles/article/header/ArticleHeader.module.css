@@ -1,0 +1,24 @@
+.article__author, .article__meta {
+  display: flex;
+  align-items: center;
+}
+.article__meta {
+  font-size: 13px;
+}
+.article__author {
+  gap: 4px;
+  margin-right: 4px;
+}
+.article__author-name {
+  font-weight: 600;
+}
+.article__date-time {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+  font-family: monospace;
+  color: #777;
+}
+.article__date-time span {
+  color: #777;
+}/*# sourceMappingURL=ArticleHeader.module.css.map */

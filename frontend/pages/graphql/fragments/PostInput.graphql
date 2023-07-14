@@ -1,0 +1,10 @@
+fragment PostInput on Post {
+    input: {
+      title: $title
+      content: $content
+      status: $status
+      tags: $tags
+      categories: $categories
+      featuredImageUrl: $featuredImageUrl
+    }
+}

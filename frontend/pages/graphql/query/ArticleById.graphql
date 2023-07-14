@@ -1,0 +1,7 @@
+#import "../fragments/PostData.graphql"
+
+query GetArticle($id: ID!) {
+  post(id: $id, idType: DATABASE_ID) {
+    ...PostData
+  }
+}

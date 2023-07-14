@@ -1,0 +1,7 @@
+query UserProfile {
+  viewer {
+    id
+    databaseId
+    username
+  }
+}

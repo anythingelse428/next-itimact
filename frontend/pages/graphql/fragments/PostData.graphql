@@ -1,0 +1,26 @@
+fragment PostData on Post {
+  title
+  content
+  id
+  featuredImageUrl
+  databaseId
+  tags {
+    nodes {
+      id
+      name
+    }
+  }
+  author {
+    node {
+      name
+      userAvatarUrl
+      userId
+    }
+  }
+  featuredImage {
+    node {
+      uri
+      srcSet
+    }
+  }
+}

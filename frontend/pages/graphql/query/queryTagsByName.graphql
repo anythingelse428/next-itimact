@@ -1,0 +1,8 @@
+query TagsByName($nameLike: String) {
+  tags(where: { nameLike: $nameLike }) {
+    nodes {
+      id
+      name
+    }
+  }
+}

@@ -1,0 +1,5 @@
+query UserAvatar($id: ID!, $idType: UserNodeIdTypeEnum) {
+  user(id: $id, idType: $idType) {
+    userAvatarUrl
+  }
+}

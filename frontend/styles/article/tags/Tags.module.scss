@@ -1,0 +1,13 @@
+.article-tags {
+  display: flex;
+  gap: 10px;
+  max-width: 100%;
+  overflow-x: auto;
+  .article__tag {
+    display: inline;
+    padding: 4px 8px;
+    background: #ebeaeac2;
+    border-radius: 4px;
+    font-family: monospace;
+  }
+}

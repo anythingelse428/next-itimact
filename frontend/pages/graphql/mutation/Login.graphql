@@ -1,0 +1,10 @@
+mutation LoginUser($password: String!, $username: String!) {
+  login(input: { username: $username, password: $password }) {
+    authToken
+    user {
+      id
+      name
+      jwtRefreshToken
+    }
+  }
+}

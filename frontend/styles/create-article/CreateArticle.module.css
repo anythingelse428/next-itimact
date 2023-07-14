@@ -1,0 +1,105 @@
+.create-article__form {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-height: 780px;
+  background: #fff;
+  padding: 15px 20px;
+}
+.create-article__input {
+  width: 100%;
+  overflow-x: hidden;
+  overflow-wrap: break-word;
+  border: 0;
+  outline: none;
+  resize: none;
+  padding: 0;
+  white-space: break-spaces;
+}
+.create-article__input::-webkit-scrollbar {
+  width: 5px;
+}
+.create-article__input::-webkit-scrollbar-thumb {
+  background: #ddd;
+}
+.create-article__input::-webkit-scrollbar-track {
+  background: transparent;
+}
+.create-article__input {
+  scrollbar-face-color: #ddd;
+  scrollbar-track-color: transparent;
+}
+.create-article__input.--title {
+  font-size: 2rem;
+  font-weight: 500;
+}
+.create-article__input.--tags {
+  display: flex;
+  flex: 1;
+}
+.create-article__input.--content {
+  min-height: 600px;
+  line-height: 1.5rem;
+  font-family: "Ubuntu", sans-serif;
+}
+.create-article__input.--content > div {
+  min-height: 600px;
+  outline: none;
+}
+.create-article__input.--submit {
+  background-color: transparent;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: inline-block;
+  border: 1px solid #75aeca;
+  border-radius: 3px;
+  color: #548eaa;
+  cursor: pointer;
+  padding: 8px 13px;
+  text-decoration: none;
+}
+.create-article__tags-guessing {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1;
+  position: absolute;
+  top: 32px;
+  background: rgba(208, 231, 238, 0.5019607843);
+  padding: 10px;
+}
+.create-article__tags {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.create-article__bar {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  width: 100%;
+  align-items: start;
+}
+.create-article__pseudotag {
+  position: relative;
+  z-index: 2;
+  background: #dedede;
+  font-family: monospace;
+  display: inline-block;
+  border-radius: 3px;
+  padding: 5px;
+}
+.create-article__pseudotag-container {
+  display: flex;
+  /* inset: 3px; */
+  position: relative;
+  align-items: center;
+  gap: 5px;
+}
+.create-article__actions {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}/*# sourceMappingURL=CreateArticle.module.css.map */

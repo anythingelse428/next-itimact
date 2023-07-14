@@ -1,0 +1,30 @@
+.navbar {
+  background: #a0cddb;
+  padding: 20px 0;
+  margin-bottom: 12px;
+}
+.navbar-container {
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.navbar a {
+  text-decoration: none;
+  color: #000111;
+}
+.navbar a:visited {
+  color: #000111;
+}
+.navbar-brand {
+  font-weight: 600;
+}
+.navbar-items {
+  display: flex;
+  gap: 20px;
+}
+.navbar-items.--user {
+  display: flex;
+}
+.navbar-item {
+  cursor: pointer;
+}/*# sourceMappingURL=Navbar.module.css.map */
