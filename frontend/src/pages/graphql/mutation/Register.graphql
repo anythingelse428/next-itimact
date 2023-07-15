@@ -1,0 +1,11 @@
+mutation RegisterUser($email: String!, $password: String!, $username: String!) {
+  registerUser(
+    input: { username: $username, password: $password, email: $email }
+  ) {
+    user {
+      jwtAuthToken
+      jwtRefreshToken
+      jwtAuthExpiration
+    }
+  }
+}

@@ -1,0 +1,9 @@
+#import "../fragments/PostData.graphql"
+
+query GetArticles {
+  posts(last: 100) {
+    nodes {
+      ...PostData
+    }
+  }
+}

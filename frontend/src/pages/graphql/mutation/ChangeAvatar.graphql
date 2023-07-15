@@ -1,0 +1,7 @@
+mutation ChangeAvatar($userAvatarUrl: String, $id: ID!) {
+  updateUser(input: { id: $id, userAvatarUrl: $userAvatarUrl }) {
+    user {
+      userAvatarUrl
+    }
+  }
+}

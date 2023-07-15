@@ -1,0 +1,27 @@
+mutation UpdatePost(
+  $tags: PostTagsInput
+  $status: PostStatusEnum
+  $content: String
+  $id: ID!
+  $featuredImageUrl: String
+  $title: String
+  $categories: PostCategoriesInput
+  $description: String
+) {
+  updatePost(
+    input: {
+      title: $title
+      content: $content
+      status: $status
+      tags: $tags
+      categories: $categories
+      featuredImageUrl: $featuredImageUrl
+      id: $id
+      description: $description
+    }
+  ) {
+    post {
+      databaseId
+    }
+  }
+}

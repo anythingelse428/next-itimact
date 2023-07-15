@@ -1,0 +1,25 @@
+mutation CreatePost(
+  $tags: PostTagsInput
+  $status: PostStatusEnum
+  $content: String
+  $title: String
+  $featuredImageUrl: String
+  $categories: PostCategoriesInput
+  $description: String
+) {
+  createPost(
+    input: {
+      title: $title
+      content: $content
+      status: $status
+      tags: $tags
+      categories: $categories
+      featuredImageUrl: $featuredImageUrl
+      description: $description
+    }
+  ) {
+    post {
+      databaseId
+    }
+  }
+}
